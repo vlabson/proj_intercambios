@@ -8,3 +8,17 @@
     <?php wp_head(); ?>
 </head>
 <body>
+
+<?php
+
+    /* função para trazer a LOGO */
+    the_custom_logo();
+
+    /* função para trazer o MENU */
+    wp_nav_menu( 
+        array(
+            'menu' => 'menu-navegacao'
+        )
+    );
+
+    
